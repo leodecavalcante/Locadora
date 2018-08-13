@@ -22,9 +22,6 @@ public class Filme {
     @Column
     private int quantidade;
 
-    @Column
-    private LocacaoEnum locacaoEnum;
-
     public Filme(String titulo, List<Categoria> categoria, int quantidade) {
         this.titulo = titulo;
         this.categoria = categoria;

@@ -13,6 +13,11 @@ public class Categoria {
     @Column
     private String nome;
 
+    public Categoria(int categoriaID, String nome) {
+        this.categoriaID = categoriaID;
+        this.nome = nome;
+    }
+
     public Categoria(String nome) {
         this.nome = nome;
     }

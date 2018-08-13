@@ -18,6 +18,12 @@ public class Locacao {
     @JoinColumn(name = "socioId")
     private Socio socio;
 
+    public Locacao(int locacaoId, Filme filme, Socio socio) {
+        this.locacaoId = locacaoId;
+        this.filme = filme;
+        this.socio = socio;
+    }
+
     public Locacao(Filme filme, Socio socio) {
         this.filme = filme;
         this.socio = socio;
