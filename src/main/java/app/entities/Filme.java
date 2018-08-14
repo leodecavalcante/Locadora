@@ -1,7 +1,5 @@
 package app.entities;
 
-import app.enums.LocacaoEnum;
-
 import javax.persistence.*;
 import java.util.List;
 

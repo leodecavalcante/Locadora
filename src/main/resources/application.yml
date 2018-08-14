@@ -1,0 +1,6 @@
+datasource:
+  driverClass: org.postgresql.Driver
+  schema: locadora
+  url: jdbc:postgresql://localhost:5432/${datasource.schema}
+  username: postgres
+  password: postgres
