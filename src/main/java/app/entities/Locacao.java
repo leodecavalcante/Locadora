@@ -18,10 +18,14 @@ public class Locacao {
     @JoinColumn(name = "socioId")
     private Socio socio;
 
-    public Locacao(int locacaoId, Filme filme, Socio socio) {
+    @Column
+    private String status;
+
+    public Locacao(int locacaoId, Filme filme, Socio socio, String status) {
         this.locacaoId = locacaoId;
         this.filme = filme;
         this.socio = socio;
+        this.status = status;
     }
 
     public Locacao(Filme filme, Socio socio) {
